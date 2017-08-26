@@ -64,8 +64,8 @@ c  09-00-00 EWL, change hmdci to hmdeta and hmdtcx to avoid overlapping tcx.
 c  11-20-07 MLH, removed unused commons and declarations
 c  01-04-08 MLH, added additional slots to WNTETA
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -137,8 +137,8 @@ c  04-06-11 MLH, added Altunin SF6 vis model
 c  11-16-12 MLH, allow two VS0 models for viscosity
 c  02-28-13 MLH, added d2
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       ierr=0
@@ -209,8 +209,8 @@ c  09-27-01 MLH, add Laesecke's alternative formulation for del10 term (use neg#
 c  11-20-07 MLH, removed unused commons and declarations, add abs(ndel0)
 c  01-04-08 MLH, added additional slots to WNTETA
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -355,8 +355,8 @@ c   1-20-00 EWL, add check for absurd t, coming from the ECS model
 c  11-20-07 MLH, removed unused commons and declarations
 c  01-04-08 MLH, added additional slots to WNTETA
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       i=icomp
       nterm=0                                    !term counter
@@ -406,8 +406,8 @@ c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  11-20-07 MLH, removed unused commons and declarations
 c  01-30-08 MLH, added additional slots to WNTETA and modify term counter
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
 c     write (*,*) ' ETA1B2--tred,etared:  ',tredB2(icomp),etarB2(icomp)
       i=icomp
@@ -451,8 +451,8 @@ c  09-27-01 MLH, allow Laesecke's alternative formulation for del0 term
 c  11-20-07 MLH, remove unused commons and declarations, add abs(ndel0)
 c  01-04-08 MLH, added additional slots to WNTETA
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       i=icomp
       eta1rs=0.0d0
@@ -630,8 +630,8 @@ c  07-01-98 EWL, read ceta(icomp,1,2) and ceta(icomp,e1,1) if version>6.01
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  11-20-07 MLH, removed unused commons and declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -691,8 +691,8 @@ c  07-01-98 EWL, replace SQRT(tau) with tau**ceta(i,1,2)
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  11-20-07 MLH, removed unused commons and declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       i=icomp
       tau=t
@@ -730,8 +730,8 @@ c  07-01-98 EWL, replace rhoc with ceta(icomp,13,1)
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  11-20-07 MLH, removed unused commons and declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
 c  initial density term for viscosity
       eta1=rho*(ceta(icomp,2,1)+ceta(icomp,3,1)
@@ -775,8 +775,8 @@ c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  02-16-99 EWL, mimic routines from SETTC1
 c  11-20-07 MLH, removed unused commons and declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -865,8 +865,8 @@ c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  02-16-99 EWL, mimic routines from TCX1DG
 c  11-20-07 MLH, removed unused commons and declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       i=icomp
       tau=1.0d0
@@ -923,8 +923,8 @@ c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  02-16-99 EWL, mimic routines from TCX1BK
 c  11-20-07 MLH, removed unused commons and declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       i=icomp
       tau=1.0d0
@@ -995,8 +995,8 @@ c  01-04-08 MLH, added additional slots to WNTETA
 c  04-28-08 MLH, increased array size in trnft to accommodate new h2 model
 c  01-08-12 MLH, increased array size in trnft to accommodate new sf6 model
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -1131,8 +1131,8 @@ c
 c  12-10-07 MLH original version based on VS1
 c  01-04-08 MLH, added additional slots to WNTETA
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       i=icomp
       nterm=0                                    !term counter
@@ -1208,8 +1208,8 @@ C  04-12-12 MLH, allowed extra terms except keep old methane form
 c  07-11-12 MLH, added terms for 1234yf
 c  11-06-12 MLH, revised to not use short equ at sat bdry
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       dimension FEED (ncmax),xliq(ncmax),xvap(ncmax)
 c
@@ -1434,8 +1434,8 @@ c  01-04-08 MLH, added additional slots to WNTETA
 c  01-04-08 MLH, allow dilute and residual parameters to be independent
 c
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -1523,8 +1523,8 @@ c
 c  11-02-07 MLH original
 c  01-04-08 MLH, added additional slots to WNTETA
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       i=icomp
       nterm=0                                    !term counter
@@ -1584,8 +1584,8 @@ c        hbvk(i)=cceta(i,1,5)
 c
 C     modified 6.14.12 MLH
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       dimension A0(10),A1(10),A2(10),A3(10), AA(10)
 c
       parameter (A0=
@@ -1668,8 +1668,8 @@ c  written by M. McLinden, NIST Phys & Chem Properties Div, Boulder, CO
 c  06-18-96  MM, original version
 c  08-19-97  MM, change error number for nread<=0; input hcasno is not array
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -1713,8 +1713,8 @@ c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  10-20-99 EWL, original version
 c  09-13-02 EWL, removed code for d>27 and d>dtest
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
 c  The code for d>27 and d>dtest caused vis to be constant at any pressure
 c  above 27 or dtest.  These checks were once used because the viscosity
@@ -1741,16 +1741,16 @@ c       ENDIF
       END
 
       function DELV (icomp,D1,T1,D2,T2)
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       DELV=DILV(icomp,T1)+EXCESV(icomp,D1,T2)
      &    -DILV(icomp,T2)-EXCESV(icomp,D2,T2)
       END
 
       function EXVDIL (DD,T)
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       EXVDIL=0.0D0
       IF (DD.LE.0) RETURN
@@ -1763,8 +1763,8 @@ c
       END
 
       function DILV (icomp,T)
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       SUM=0.0D0
       TF=T**(1.0D0/3.0D0)
@@ -1777,8 +1777,8 @@ c
       END
 
       function EXCESV (icomp,DD,T)
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       double precision EV(8)
 c
       EV(1)=ceta(icomp,10,1)
@@ -1874,8 +1874,8 @@ c  02-16-99 EWL, rename to ETA4RS
 c  11-06-00 EWL, change to ETAHE using the hardcoded model
 c  01-25-07 EWL, check for large value in the calculation of expe
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       x=5.7037825d0
       if (t.le.300.0d0) x=log(t)
@@ -1927,8 +1927,8 @@ c
 c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  02-29-00 EWL, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       double precision gv(9)
 c
       etaety=0.0d0
@@ -1984,8 +1984,8 @@ c
 c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  03-27-00 EWL, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       etaneo=0.0d0
       a0= 17.67484d0
@@ -2045,8 +2045,8 @@ c
 c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  11-01-00 EWL, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       etaR23=0.0d0
       rhoL=ceta(icomp,2,1)
@@ -2084,8 +2084,8 @@ c  11-06-00 EWL, original version
 c  01-04-08 MLH, added additional slots to WNTETA
 c  05-08-08 MLH, allow for IAPWS 2008 critical enhancement term
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       etaH2O=0.0d0
       tr=t/tredeta(icomp)
@@ -2146,8 +2146,8 @@ c
 c     05/08/08 MLH, based on code from RAP
 c     09/20/10 MLH, remove extrap limit on chi
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       dimension x(ncmax)
 c     Input variables
 c        tk      temperature,  K
@@ -2210,8 +2210,8 @@ c     for submission to JPCRD, 2008
 c
 c     05/08/08 MLH based on code from RAP
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c     data Tc,Denc,Pc/647.096D0, 322.0D0, 22.064D0/
 c     data etabkc,lamdabkc/39.3d-6,0.197d0/
       parameter (qcinv=1.9d-9, qdinv=1.1d-9)
@@ -2270,8 +2270,8 @@ c
 c  11.09.05 version based on code from HWX
 c  05.17.11 change r to rd to avoid conflicts with gcnst
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       dimension h(9),d(7),e(9)
 c
       parameter (h=

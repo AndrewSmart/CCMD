@@ -29,7 +29,7 @@ c  03-02-05 EWL, add error checking
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DIELEC
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
       character*255 herr
 c
@@ -90,7 +90,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  07-01-98 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -159,7 +159,7 @@ c  08-05-04 EWL, add DE3 and DE4
 c  02-22-10 EWL, add check for tau=1
 c  03-11-13 EWL, add check for negative values raised to the 0th or 1st power
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       double precision na,mu,kk
       dimension x(ncmax)

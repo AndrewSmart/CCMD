@@ -43,7 +43,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  03-13-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
 c  read data from file
@@ -90,7 +90,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  03-13-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -136,7 +136,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  03-13-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       ierr=0
@@ -224,7 +224,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  05-30-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       ierr=0
@@ -320,7 +320,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  05-30-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       ierr=0
@@ -420,7 +420,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chem Properties Div, Boulder, CO
 c  03-13-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -479,7 +479,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  09-18-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
 c  read data from file
@@ -527,7 +527,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  09-18-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -574,7 +574,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  03-13-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       ierr=0
@@ -661,7 +661,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chem Properties Div, Boulder, CO
 c  09-19-02 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -721,7 +721,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  09-18-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
 c  read data from file
@@ -768,7 +768,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  03-13-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -814,7 +814,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  03-13-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       ierr=0
@@ -900,7 +900,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  03-13-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
 c  read data from file
@@ -947,7 +947,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  03-13-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -993,7 +993,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  03-13-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       ierr=0
@@ -1080,7 +1080,7 @@ c  written by E.W. Lemmon, NIST Physical & Chem Properties Div, Boulder, CO
 c  03-13-01 EWL, original version
 c  12-14-11 EWL, add error for equation not available
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -1148,7 +1148,7 @@ c  03-13-01 EWL, original version
 c  07-20-10 EWL, change how t is modified if p1<1.d-15
 c  04-04-13 EWL, change initial t to 0.75*tc so that t>ttrp of CO2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c

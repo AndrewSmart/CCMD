@@ -1,4 +1,4 @@
-c..begin file comtrn.for
+c..begin file COMTRN.FOR
       parameter (mxeta=40)   !max no. coefficients for viscosity
       parameter (mxetac=10)  !max number additional parameters for chung
       parameter (mxtck=40)   !max no. coefficients for t.c. crit
@@ -165,5 +165,5 @@ c        1         2         3         4         5         6         7
 c23456789012345678901234567890123456789012345678901234567890123456789012
 c
 c ======================================================================
-c                                                    end file comtrn.for
+c                                                    end file COMTRN.FOR
 c ======================================================================

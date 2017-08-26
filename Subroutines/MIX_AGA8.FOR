@@ -51,7 +51,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  10-31-02 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension a0(64),x(ncmax)
 c
       call SETAG(x)
@@ -368,7 +368,7 @@ c                at 298.15 K and 101.325 kPa
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SETAGA
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       ierr=0
@@ -537,7 +537,7 @@ c  01-07-10 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: UNSETAGA
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       call RESETA
       if (heos.eq.'AGA') then
@@ -580,7 +580,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  10-31-02 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       double precision K3
       dimension x(ncmax),z(ncmax)
 c
@@ -672,7 +672,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  10-31-02 EWL, original version
 c
-c     include 'commons.for'
+c     include 'COMMONS.FOR'
 c
 c     data anaga/0.1538326d0,1.341953d0,-2.998583d0,-0.04831228d0,
 c    & 0.3757965d0,-1.589575d0,-0.05358847d0,0.88659463d0,-0.71023704d0,

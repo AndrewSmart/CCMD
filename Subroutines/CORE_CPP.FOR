@@ -60,7 +60,7 @@ c  06-29-98 MEV, initialize ncoshc and nsinhc for version previous to 6.1
 c  08-13-98  MM, delete obsolete (unused) format statement
 c  03-24-10 EWL, set variables in common blocks to 0
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*12 hcasno,hcasc
       character*255 herr
 c  commons associated with the mxcpp fluids with FEQ equations stored
@@ -213,7 +213,7 @@ c                a possible overflow error.
 c  01-24-00 EWL, check for ui>1000 to avoid exp(ui)=overflow
 c  05-02-01 EWL, change u1>1000 to ui>200
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       CP0CPP=0.d0
       if (t.le.0.d0) return
@@ -313,7 +313,7 @@ c  06-18-96  MM, actually add the exponential terms
 c  04-02-98 EWL, add hyperbolic terms
 c  11-04-02 EWL, include contribution of hyp. terms from the ref. temperature
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       j=icomp                          !pointer to appropriate fluid
       cpsum=0.0d0
@@ -409,7 +409,7 @@ c  06-18-96  MM, actually add the exponential terms
 c  04-02-98 EWL, add hyperbolic terms
 c  11-04-02 EWL, include contribution of hyp. terms from the ref. temperature
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       j=icomp                          !pointer to appropriate fluid
       cpsum=0.0d0
@@ -548,7 +548,7 @@ c  08-13-98  MM, add cross derivatives (all zero) and 3rd density deriv
 c  08-16-07 NRN, add 3rd derivatives for cosh and sinh (Ryan Nannan, Delft University)
 c  03-21-10 EWL, add call to RMIX
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       call INFO (icomp,wmm,ttrp,tnbpt,tc,pc,Dc,Zc,acf,dip,Rgas)
@@ -686,7 +686,7 @@ cc     Cp0/Cred = SUM [cpc0(i,k)*(T/Tred(i))**xkc0(i,k)]
 cc     where Cred is reducing parameter for Cp0 (e.g. gas constant, R)
 cc           Tred is reducing parameter for t (e.g. critical temperature)
 cc
-c      include 'commons.for'
+c      include 'COMMONS.FOR'
 c      character*12 hcasc
 c      common /NTCPP/ ntrmca(mxcpp),ntrmce(mxcpp)
 c      common /RDCPP/ treda(mxcpp),Creda(mxcpp)

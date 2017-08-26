@@ -115,8 +115,8 @@ c  09-20-10 MLH, corrected Null vs nul error, look only for ierr=-60 at crit poi
 c  10-28-10 EWL, remove composition dependence if nc=1
 c  06-01-11 EWL, remove common block SHAPES; none of the variables are used in other routines
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr,herrs,herrk,herret,hercrt
       character*255 herrvj, herrsv
 c     character*255 hfile(n0:nx), refer1, refer2
@@ -962,8 +962,8 @@ c  12-17-07 MLH, deactivate reference fluid bounds checks.
 c  05-27-08 MLH, add one more binary int par for dilute gas viscosity xdij in trnbin
 c  06-11-08 MLH, add second bin int for dilute gas vis xdij2
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       logical lerrt,lerrD
       dimension x(ncmax)
@@ -1175,8 +1175,8 @@ c  07-08-98 EWL, change character strings from *80 to *255
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  11-15-01 MLH, allow ecs to read critical enhancement model
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*3 heoss,hvs,htc
       character*12 hcasno
       character*255 hreff
@@ -1279,8 +1279,8 @@ c
 c  written by M. McLinden, NIST Phys & Chem Properties Div, Boulder, CO
 c  10-24-97  MM, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       if (nEuck(icomp).le.0) then
 c  no correlation for f_int is present, use value corresponding to
@@ -1321,8 +1321,8 @@ c  03-05-97  MM, original version
 c  09-04-97  MM, add second polynomial fit (w/ crossover t or rho)
 c  10-24-97  MM, changes in /WNTTRN/ to accommodate Eucken correlation
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       i=icomp
       if (npsi1(i).le.0) then
@@ -1383,8 +1383,8 @@ c  03-05-97  MM, original version
 c  09-04-97  MM, add second polynomial fit (w/ crossover t or rho)
 c  10-24-97  MM, changes in /WNTTRN/ to accommodate Eucken correlation
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       i=icomp
       if (nchi1(i).le.0) then
@@ -1451,8 +1451,8 @@ c  09-24-97  MM, original version
 c  10-24-97  MM, fint is now f(T) rather than const = 1.32d-3
 c  10-26-06  MLH, changed htcx(1) to htcx(icomp)
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       ierr=0
@@ -1503,8 +1503,8 @@ c  03-24-97  MM, original version
 c  01-27-00 EWL, add check for nitrogen: no bounds checking on temperature
 c  07-09-08 MLH, no upper temp bounds checking
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       logical lerrt,lerrD
 c
       if (D.gt.Dmax) then
@@ -1540,8 +1540,8 @@ c  written by M. McLinden, NIST Phys & Chem Properties Div, Boulder, CO
 c  08-25-97  MM, original version, based on ETA1 function by S.A. Klein
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       ETA0DG=0.d0
       i=icomp
@@ -1580,8 +1580,8 @@ c  originally implemented in MIPROPS/SUPERTRAPP by J.F. Ely
 c  08-25-97 MM, revised and documented by M. McLinden,
 c               NIST Physical & Chemical Properties Div, Boulder, CO
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       if (il.eq.1 .and. is.eq.1) then
         OMEGAS=1.06036d0/tau**0.15610d0
@@ -1613,8 +1613,8 @@ C     06-15-04 MLH corrected units
 C     07-22-05 MLH allow selection of alternative ref fluid
 c     11-30-06 mlh revised to allow negative values, and scaled so that n2 matches Reid et al.
 C
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       dimension hj(ncmax)
       DIMENSION X(nx), Z(nx), S(nx), SIGM(nx,nx)
       DIMENSION SIGDUM(nx,nx), CMWDUM(nx), ZDUM(nx)
@@ -1686,8 +1686,8 @@ c
 c ======================================================================
 c
       SUBROUTINE ENSKOG (N,RHO,SIGM,CMW,X,ETA)
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       double precision MJI
       DIMENSION SIGM(nx,nx), CMW(nx), X(nx), Y(nx)
       DIMENSION H(nx,21), S(nx,nx)
@@ -1803,8 +1803,8 @@ c  05-27-08 MLH, add one more binary int par for dilute gas viscosity xdij in tr
 c  06-12-08 MLH, revised empirical correction for binaries
 c  04-27-10 EWL, add code to check for x(i)=0
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       dimension x(ncmax),etai(ncmax)
       character*255 herr
       DIMENSION EOK(nx,nx), SIGM(nx,nx), RM(nx,nx), H(nx,nx+1)
@@ -1971,8 +1971,8 @@ c  06-28-02 LV,  correct dz/ddel
 c  09-06-04 MLH, on nonconvergence, do not return initial guess- return actual value
 c  12-25-06 MLH, allow up to twice max t
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       parameter (itmax=200)
       parameter (tolf=1.0d-7)  !convergence tol for function evaluations
@@ -2161,8 +2161,8 @@ c  09-26-97  MM, original version, based on MINH by S.A. Klein
 c  01-24-00 EWL, decrease TOL to 1E-11
 c  09-04-00 EWL, change variable R to RR to avoid conflict with R in Gcnst
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       parameter (CGOLD=0.61803399, ZEPS=1E-20)
       parameter (TOL=1E-11, ITMAX=50)
@@ -2336,8 +2336,8 @@ c  09-26-97  MM, original version, replaces MINF by S.A. Klein
 c  01-13-98  MM, set damping ratio to 0.8 and constrain new guesses
 c  01-24-00 EWL, decrease tolr to 1.0d-11
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       logical lxneg,lxpos
       dimension x(3),fx(2)
@@ -2482,8 +2482,8 @@ c  11-11-06 MLH, initial version.
 c  12-17-07 MLH, deactivate some bounds checks on ref. fluids
 c  02-13-08 MLH, deactivate more bounds checks on fluids
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr,herrs,herrk,herret,hercrt
       character*255 herrvj, herrsv
 c     character*255 hfile(n0:nx)
@@ -2796,8 +2796,8 @@ c                          passed to calling routine
 c     herr--error string (character*255 variable if ierr<>0)
 c
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       dimension fj(ncmax),hj(ncmax)  !reducing ratios for components
 c

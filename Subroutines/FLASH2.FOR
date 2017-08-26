@@ -109,7 +109,7 @@ c  01-18-01 EWL, remove code and call generic TBFLSH
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: THFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax),y(ncmax),z(ncmax)
 c
@@ -140,7 +140,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: THFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -188,7 +188,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: THFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax),xdew(ncmax),ybub(ncmax)
 c
@@ -244,7 +244,7 @@ c  01-18-01 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TSFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax),y(ncmax),z(ncmax)
 c
@@ -275,7 +275,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TSFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -323,7 +323,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TSFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax),xdew(ncmax),ybub(ncmax)
 c
@@ -379,7 +379,7 @@ c  01-18-01 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TEFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax),y(ncmax),z(ncmax)
 c
@@ -410,7 +410,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TEFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -458,7 +458,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TEFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax),xdew(ncmax),ybub(ncmax)
 c
@@ -517,7 +517,7 @@ c  05-13-99 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DHFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax)
 c
@@ -544,7 +544,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DHFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -583,7 +583,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DHFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax)
 c
@@ -641,7 +641,7 @@ c  01-19-01 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DSFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax)
 c
@@ -666,7 +666,7 @@ c        t--temperature [K]
 c     ierr--error flag:  0 = successful
 c     herr--error string (character*255 variable if ierr<>0)
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -705,7 +705,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DSFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax)
 c
@@ -763,7 +763,7 @@ c  01-19-01 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DEFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax)
 c
@@ -790,7 +790,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DEFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -829,7 +829,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DEFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax)
 c
@@ -888,7 +888,7 @@ c  11-21-12 EWL, specify better values of q after call to HSFL1
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: HSFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax),y(ncmax),z(ncmax)
 c
@@ -1008,7 +1008,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: HSFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -1039,7 +1039,7 @@ c  05-16-05 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: ESFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax),y(ncmax),z(ncmax)
 c
@@ -1108,7 +1108,7 @@ c  05-06-10 EWL, allow T>Tc for mixtures
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TQFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr2
       dimension z(ncmax),x(ncmax),y(ncmax)
       dimension xdew(ncmax),ybub(ncmax)
@@ -1346,7 +1346,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TQFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax),xdew(ncmax),ybub(ncmax)
 c
@@ -1417,7 +1417,7 @@ c  05-06-10 EWL, allow p>pc*1.5 for mixtures
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PQFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr2
       dimension z(ncmax),x(ncmax),y(ncmax)
       dimension xdew(ncmax),ybub(ncmax)
@@ -1635,7 +1635,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PQFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax),xdew(ncmax),ybub(ncmax)
 c
@@ -1677,7 +1677,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DQFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax)
 c
@@ -1755,7 +1755,7 @@ c  03-15-12 EWL, change rho0 from 10^-10 to 10^-4 so that the inital entropy wil
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TBFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*1 bt
       character*2 ab
       character*255 herr,herr1
@@ -2148,7 +2148,7 @@ c  11-21-12 EWL, specify better values of q after call to ABFL1
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DBFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*1 bt
       character*2 ab
       character*255 herr,herr2,herrl
@@ -2340,7 +2340,7 @@ c  05-08-12 EWL, get liquid and vapor entropy after call to SATT and use it for 
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: ABFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*1 at,bt
       character*2 ab
       character*255 herr,herr1
@@ -2594,7 +2594,7 @@ c
 c  07-07-10 EWL, add check for z(1)=z(3) in reguli-falsi method
 c  02-11-11 EWL, check for stuck at high densities with root at low densities
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*1 at,bt
       character*2 ab
       character*255 herr,herr1
@@ -2851,7 +2851,7 @@ c  05-25-12 EWL, move calculation of p and dpdt inside IF block
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DBFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*1 bt
       character*2 ab
       character*255 herr,herr1
@@ -3004,7 +3004,7 @@ c  08-04-11 EWL, add check for d<dv
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: ABFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*1 at,bt
       character*2 ab
       character*255 herr,herr1
@@ -3462,7 +3462,7 @@ c  05-05-09 EWL, change the parameter x to z in the call to CRITP
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DBFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*2 ab,tb
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax),aj(3),faj(2),
@@ -3598,7 +3598,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Div, Boulder, CO
 c  12-17-02 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       character*1 bt
       dimension z(ncmax),x(ncmax),y(ncmax)
@@ -3666,7 +3666,7 @@ c  12-19-07 EWL, implement new method proposed by Aaron Johnson
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: CSTAR
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax),xliq(ncmax),xvap(ncmax)
 c

@@ -50,7 +50,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  07-21-03 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       do i=1,nc
@@ -105,7 +105,7 @@ c  09-11-09 EWL, remove x dependence for pure fluids
 c  06-08-10 EWL, increase fprkij array size
 c
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       double precision x(ncmax),ai(ncmax),bi(ncmax),ki(ncmax)
       dimension atci(ncmax),daidt(ncmax),d2aidt2(ncmax),aij(ncmax,ncmax)
 c
@@ -430,7 +430,7 @@ c
 c  written by NIST Thermophysics Division, Boulder, Colorado
 c  09-24-04 original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       tc=tcrit(icomp)
       pc=pcrit(icomp)
@@ -455,7 +455,7 @@ c
 c  written by NIST Thermophysics Division, Boulder, Colorado
 c  10-21-04 original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       call ISPURE (x,icomp)
@@ -492,7 +492,7 @@ c
 c  written by NIST Thermophysics Division, Boulder, Colorado
 c  09-24-04 original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       call ISPURE (x,icomp)
@@ -538,7 +538,7 @@ c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  11-10-04 EWL, original version
 c  09-11-09 EWL, initialize prcoef
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 hmodcp2
       character*12 hcasno
       character*255 herr
@@ -615,7 +615,7 @@ c     for component i
 c
 c  written by NIST Thermophysics Division, Boulder, Colorado
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
 c     compute translation factor if not pre-loaded
 c     default prescription is constant portion of translation in
@@ -650,7 +650,7 @@ c  08-11-06 MLH, use variable hrf instead of 'DEF'
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PREOS
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       character hrf*3
       dimension x0(ncmax)
@@ -703,7 +703,7 @@ c
 c  written by NIST Thermophysics Division, Boulder, Colorado
 c  10-11-04 original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       double precision x(ncmax),ai(ncmax),bi(ncmax),ki(ncmax)
       dimension atci(ncmax),az(3),zz(3)
 c
@@ -811,7 +811,7 @@ c     original version 10.14.04
 c  10-04-07  HH, change MXINF2 to MXINF1 as is the case in other code
 c  05-21-10 EWL, do not set hbin in this routine, overwrites HMX file
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension ifam(n0:nx),IJ(2)
 c

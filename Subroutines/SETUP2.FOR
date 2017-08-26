@@ -43,8 +43,8 @@ c  11-08-06 EWL, load TCX and ETA coefficients into negative arrays
 c  12-26-06 MLH, add VS4 model
 c  11-02-07 MLH, add Chung model
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*1 hstar
       character*3 heqn
       character*3 hetemp,httemp
@@ -507,7 +507,7 @@ c  01-23-02 EWL, split common block CITE into 2 pieces for some compilers
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: GETMOD
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 htype,hcode
       character*255 hcite
 c
@@ -620,7 +620,7 @@ c  02-13-09 EWL, add check for fluid order in KW model (add fmix2)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SETKTV
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 hmodij,htype
       character*255 hfmix
       character*255 herr
@@ -821,7 +821,7 @@ c  02-13-09 EWL, add check for fluid order in KW model (add fmix2)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: GETKTV
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 hmodij
       character*8 hfij(nmxpar)
       character*255 hfmix,hmxrul
@@ -924,7 +924,7 @@ c  01-23-02 EWL, split common block MXINFO into 2 pieces for some compilers
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: GETFIJ
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 hmodij
       character*8 hfij(nmxpar)
       character*255 hmxrul,herr

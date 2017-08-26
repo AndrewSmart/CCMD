@@ -55,7 +55,7 @@ c  08-31-98 MEV, reverse order of indices in tsvph0(i,j)=0 and rhosvp(i,j)=0
 c  08-13-98  MM, delete obsolete (unused) format statement
 c  07-25-06 EWL, add cosh and sinh functions
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*12 hcasno,hcasp
       character*255 herr
       common /CASPH0/ hcasp(mxph0)
@@ -167,7 +167,7 @@ c  07-25-06 EWL, add cosh and sinh functions
 c  08-24-06 EWL, add check for PHG in hmodcp (add EOSMOD common block).
 c                If it is used, multiple by R*/R as described in GERG-2004 eos (of Kunz and Wagner)
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
 c  compute reduced Helmholtz; first check if t same as previous call

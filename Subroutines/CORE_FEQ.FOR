@@ -97,7 +97,7 @@ c  12-12-07 MLH, added general Helmholtz equation of Xiang and Deiters (2007)
 c  09-08-09 EWL, optimize equations as given in propane publication
 c  09-08-09 EWL, finished da^3/dt^2dd for the critical region terms
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
 c     write (*,*) ' PHIFEQ--enter w/ tau,del = ',tau,del
 c
@@ -562,7 +562,7 @@ c  02-27-96  MM, parameter n0=-ncmax to accommodate ECS-thermo model
 c  01-03-97  MM, new arrays added to /WCFFEQ/ (assoc w/ sorting of powers)
 c  07-02-97 EWL, modify /WCFFEQ/ to accommodate g parameter
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       tc=tcfeq(icomp)
       pc=pcfeq(icomp)
@@ -598,7 +598,7 @@ c  02-27-96  MM, parameter n0=-ncmax to accommodate ECS-thermo model
 c  01-03-97  MM, new arrays added to /WCFFEQ/ (assoc w/ sorting of powers)
 c  07-02-97 EWL, modify /WCFFEQ/ to accommodate g parameter
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
 c     write (*,*) ' REDFEQ, i,t0,rho0: ',icomp,t0feq(icomp),rho0feq(icomp)
       tred=t0feq(icomp)
@@ -659,7 +659,7 @@ c  12-22-98 EWL, set Reos to Rfeq
 c   4-24-00 EWL, change the exponent of del in the EXP term from integer to
 c                real*8 and modify the common blocks WCFFEQ and WLFFEQ
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 hcpfeqa
       character*12 hcasa,hcasno
       character*255 herr
@@ -855,7 +855,7 @@ c  07-20-95  MM, original version
 c   9-18-00 EWL, remove section of code from SETFEQ and place in new
 c                subroutine SETEXP so that fitting routines can call it.
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       tpower(icomp,1)=tifeq(icomp,1)
       dpower(icomp,1)=difeq(icomp,1)
@@ -980,7 +980,7 @@ cc  01-16-96  MM, implicit integer (i-n); (include L)
 cc  02-27-96  MM, parameter n0=-ncmax to accommodate ECS-thermo model
 cc  01-03-97  MM, arrays added to /FEQSAV/ (assoc with sorting of powers)
 cc
-c      include 'commons.for'
+c      include 'COMMONS.FOR'
 c      parameter (mxfeq=2)        !max number of FEQ EOS in block data
 c      parameter (nsave=(nx-n0+1)*(mxtrm+1))
 c      parameter (nsave1=(nx-n0+1)*mxtrm)

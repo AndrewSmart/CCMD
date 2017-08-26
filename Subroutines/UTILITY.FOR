@@ -68,7 +68,7 @@ c  03-08-00 EWL, change names of inputs to avoid conflicts with CCON
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: INFO
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       if (abs(icomp).le.nc) then
         wmm=wmas(icomp)
@@ -118,7 +118,7 @@ c  12-01-97  MM, add synonyms to /CNAM80/
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: NAME
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*12 hnam,hcasn
       character*80 hn80
 c
@@ -159,7 +159,7 @@ c  12-02-98 EWL, remove compositional dependence for pure fluids
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: WMOL
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       call ISPURE (x,icomp)
@@ -195,7 +195,7 @@ c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: XMASS
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xmol(ncmax),xkg(ncmax),xsumi(ncmax)
 c
       call ISPURE (xmol,icomp)
@@ -242,7 +242,7 @@ c  10-24-02 EWL, set xmol=1 for a pure fluid
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: XMOLE
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xmol(ncmax),xkg(ncmax),xsumi(ncmax)
 c
       call ISPURE (xkg,icomp)
@@ -369,7 +369,7 @@ c  10-05-07  HH, remove common block WLMETA
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: LIMITX
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       logical lerr,lwarn,ltemp
       dimension x(ncmax)
       character*3 htyp
@@ -650,8 +650,8 @@ c  11-20-01 EWL, check for t<ttrp
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: LIMITK
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       logical lerr,lwarn,ltemp
       character*3 htyp
       character*75 herrt,herrd,herrp
@@ -887,8 +887,8 @@ c  02-28-13 EWL, add dmax = dens(Ttrp) for htyp='TRP'
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: LIMITS
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       dimension x(ncmax)
       dimension tred(ncmax),Dred(ncmax)
       dimension tmn(ncmax),tmx(ncmax),Dmx(ncmax),pmx(ncmax)
@@ -1055,7 +1055,7 @@ c  11-17-99  MM, new variable for printed message
 
 cx DEC$ ATTRIBUTES DLLEXPORT :: ERRMSG
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,hout
       character*4 hstrg
 c
@@ -1134,7 +1134,7 @@ c  02-23-98  MM, original version, based on XMASS
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: QMASS
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xl(ncmax),xv(ncmax),xlkg(ncmax),xvkg(ncmax)
       character*255 herr
       parameter (eps=1.0d-8)
@@ -1184,7 +1184,7 @@ c  02-23-98  MM, original version, based on XMOLE
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: QMOLE
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xl(ncmax),xv(ncmax),xlkg(ncmax),xvkg(ncmax)
       character*255 herr
       parameter (eps=1.0d-8)
@@ -1244,7 +1244,7 @@ c                add z,z2,z3,z4 for passing to GEVAL
 c  03-26-98  MM, make z an array (e.g. for passing composition)
 c  01-19-01 EWL, remove external dependence
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       logical lmax
       dimension z(ncmax)
       character*1 bt
@@ -1304,7 +1304,7 @@ c
 c  Make all the characters in the string b uppercase, from the first
 c  character to character k
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character ucase*255, a*255, b*(*)
 c
       a=b
@@ -1337,7 +1337,7 @@ c  Version 0.0   10.07.05
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DOTFILL
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),xliq(ncmax),xvap(ncmax),y(ncmax),z(ncmax)
       character herr*255
 c
@@ -1424,7 +1424,7 @@ c  08-25-97 MM, original version
 c  11-06-01 MLH, changed name to CBRTX to be standard conforming.
 c  09-29-04 MLH, fixed bug for neg arguments
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       xa=ABS(x)
       xathrd=xa**thrd
@@ -1455,7 +1455,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  05-18-10 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xPnts(3),yPnts(3)
       character herr*255
 c
@@ -1517,7 +1517,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  11-28-12 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xPnts(*),yPnts(*),fdd(20,20)
       character herr*255
 c
@@ -1567,7 +1567,7 @@ c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  01-01-92 EWL, original version
 c  12-18-12 EWL, reverse order of Jacobian matrix
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension amatrix(maxn,maxn),cmatrix(maxn)
       dimension iord(100),ctemp(maxn),sdecomp(maxn)
       character herr*255
@@ -1666,7 +1666,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  01-01-92 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension amatrix(maxn,maxn),iord(100),sdecomp(maxn)
 c
       ipivt=j
@@ -1697,7 +1697,7 @@ c  written by NIST Thermophysics Division, Boulder, Colorado
 c  09-24-04 original version
 c  05-17-11 EWL, change r to rr to avoid conflicts with gcnst
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension a(3),z(3)
 c
 c  All of the digits are necessary for liquid densities with pressures very close to zero
@@ -1760,7 +1760,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  07-06-11 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xPnts(*),yPnts(*)
       dimension amatrix(maxn,maxn),cmatrix(maxn)
       character herr*255
@@ -1796,7 +1796,7 @@ c
 c ======================================================================
 c
       subroutine IDCRV (d,x,t,ierr,herr)
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
       character herr*255
       ierr=0
@@ -1837,7 +1837,7 @@ c
 c ======================================================================
 c
       subroutine BLCRV (d,x,t,ierr,herr)
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
       character herr*255
       ierr=0
@@ -1874,7 +1874,7 @@ c
 c ======================================================================
 c
       subroutine JTCRV (d,x,t,ierr,herr)
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
       character herr*255
       ierr=0
@@ -1917,7 +1917,7 @@ c
 c ======================================================================
 c
       subroutine JICRV (d,x,t,ierr,herr)
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
       character herr*255
       ierr=0
@@ -1969,7 +1969,7 @@ c
 c  written by Matthias Kunick, NIST Thermophysics Division, Boulder, Colorado
 c  09-15-11  MK, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xi(1000),fi(1000),coeff(1000)
       dimension g(1000),h(1000),d(1000),b(1000),c(1000)
 c
@@ -2007,7 +2007,7 @@ c
 c  written by Matthias Kunick, NIST Thermophysics Division, Boulder, Colorado
 c  09-15-11  MK, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension d(1000),e(1000),c(1000),b(1000)
       dimension z(1000),y(1000),w(1000),v(1000),t(1000)
 c
@@ -2061,7 +2061,7 @@ c
 c  written by Matthias Kunick, NIST Thermophysics Division, Boulder, Colorado
 c  09-15-11  MK, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xi(1000),fi(1000),coeff(1000)
       character*255 herr
 c
@@ -2123,7 +2123,7 @@ c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  09-20-11 EWL, original version
 c  11-27-12 EWL, add enthalpy and entropy
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xPnts(1000),yPnts(1000),coefs(1000)
       character herr*255
       f=300
@@ -2189,7 +2189,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  09-20-11 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character herr*255
 c  get upper and lower bounds
       call SPLNVAL(isp,-1,a,alow,ierr,herr)
@@ -2318,7 +2318,7 @@ c  written by G. Venkatarathnam, Indian Institute of Technology Madras
 c  10-15-11  GV, original version
 c  01-07-13 EWL, adapt code for use in REFPROP
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension a(ncmax,ncmax),u(ncmax),y(ncmax),a1(ncmax,ncmax)
       character*255 herr
       maxn=ncmax
@@ -2396,7 +2396,7 @@ c
 cDEC$ ATTRIBUTES DLLEXPORT, Decorate, Alias: "PASSCMN"::PASSCMN
 cDEC$ ATTRIBUTES STDCALL, REFERENCE::PASSCMN
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,hvar,hstr,htemp
       character hvr*(*)
       dimension arr(100),a(100)

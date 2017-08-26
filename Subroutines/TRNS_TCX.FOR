@@ -67,8 +67,8 @@ c
 c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  02-29-00 EWL, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -122,8 +122,8 @@ c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  02-29-00 EWL, original version
 c  12-21-09 MLH, added D2, T2, HE3 models
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       ierr=0
@@ -189,8 +189,8 @@ c  written by M. McLinden, NIST Phys & Chem Properties Div, Boulder, CO
 c  02-06-97  MM, original version
 c  08-19-97  MM, change error number for nread<=0; input hcasno is not array
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -287,8 +287,8 @@ c  11-17-98  MM, nterm not incremented properly, denominator not correct--
 c                appears to affect only CO2
 c  11-10-99 EWL, add special term; power = -96
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       tau=1.0d0
@@ -377,8 +377,8 @@ c  03-28-97  MM, compute tau,del only if residual terms exist
 c  02-17-99 EWL, add nbknum(i) to the "DO" statement for the denominator loop
 c  01-26-00 EWL, add special terms for methane
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       i=icomp
       tau=1.0d0
@@ -466,8 +466,8 @@ c  08-19-97  MM, change error number for nread<=0; input hcasno is not array
 c  09-00-00 EWL, change hmdci to hmdtcx and hmdeta to avoid overlapping vis.
 c  03-08-00 EWL, do not read in enhancement info if pointer=NUL
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -548,8 +548,8 @@ c  10-16-96 MM, original version
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  11-26-02 EWL, change Cp0 to Cp00 to avoid confusion with function Cp0
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
 c  compute dilute-gas viscosity
       sigma=ctcx(icomp,1,1)
@@ -590,8 +590,8 @@ c  10-16-96 MM, original version
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  11-21-07 MLH, remove unused commons and declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
 c  compute functions given as Eqs 28-30
       tinv=1.0d0/t
@@ -631,8 +631,8 @@ c  11-14-97  MM, return zero if rho = 0 (avoid division by zero)
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  09-00-00 EWL, remove del and tau before alphar derivatives
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
 c  the array ctcx contains, in order:
 c       1-2:  Lennard-Jones sigma and epsilon/kappa
@@ -736,8 +736,8 @@ c  06-18-96  MM, original version
 c  08-19-97  MM, error for nread<=0; input hcasno is not array
 c  06-30-98 EWL, implement model of Younglove
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -796,8 +796,8 @@ c
 c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  06-30-98 EWL, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       i=icomp
       tau=t
@@ -837,8 +837,8 @@ c  06-30-98 EWL, original version
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 
       tcx3bk=0.0d0
@@ -906,8 +906,8 @@ c
 c  11-19-07  MLH, original
 c  01-04-08  MLH, allow dilute and residual parameters to be independent
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -973,8 +973,8 @@ c
 c   11-19-07 MLH  original version
 c   01-04-08 MLH  added additional slots to cctcx
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       i=icomp
@@ -1025,8 +1025,8 @@ c        hbkk(i)=cctcx(i,1,5)
 c  11-19-07 MLH, original
 c  01-04-08 MLH  added additional slots cctcx
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       dimension B0(7), B1(7), B2(7), B3(7), BB(7)
       parameter (B0=(/2.41657D0, -0.50924D0, 6.61069D0, 14.5425D0,
@@ -1102,8 +1102,8 @@ c  written by M. McLinden, NIST Phys & Chem Properties Div, Boulder, CO
 c  10-30-96  MM, original version
 c  08-19-97  MM, error for nread<=0; input hcasno is not array
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -1153,8 +1153,8 @@ c  written by M. McLinden, NIST Phys & Chem Properties Div, Boulder, CO
 c  02-24-97  MM, original version
 c  03-27-97  MM, change powers in exp term to integer
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -1235,8 +1235,8 @@ c  02-24-97  MM, original version
 c  03-27-97  MM, change powers in exp term to integer
 c  01-25-00 EWL, set tcx1cr=0 if xexp<-500
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
 c  compute the various parts of the critical enhancement
 c  these are taken in the order:
@@ -1354,8 +1354,8 @@ c
 c  written by M. McLinden, NIST Phys & Chem Properties Div, Boulder, CO
 c  06-08-97  MM, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -1438,8 +1438,8 @@ c  04-13-10  MLH, do use viscosity critical enhancement in Olchowy-Sengers model
 c  09-20-10  MLH, insert special code for new iapws water, more digits on piinv
 c  11-20-10  MLH, replace call to etak with trnprp to remove problem w ecs only eta
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       dimension xdummy(ncmax)
 c
@@ -1558,8 +1558,8 @@ c  02-24-97  MM, original version
 c  08-19-97  MM, error for nread<=0; input hcasno is not array
 c  02-22-99 EWL, implement TCX4CR model
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -1610,8 +1610,8 @@ c
 c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  02-22-99 EWL, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
 c  if density is approx zero, return zero for the critical enhancement
@@ -1679,8 +1679,8 @@ c  06-08-97  MM, original version
 c  11-15-01 MLH, adapted for ecs model use
 c  06-02-11 MLH, change common blocks to dimension statements
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
       dimension tmtcke(nrf0:nx),txtcke(nrf0:nx),pxtcke(nrf0:nx),
@@ -1769,8 +1769,8 @@ c  01-26-00 EWL, Tufeu formulation returns an infinite Tcx at Tc for any
 c                density.  Outside of the critical region, the effect was
 c                removed (between 404.4 and 406.5 K and rho<9.6 or rho>18.)
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       rhokg=rho*wmas(icomp)               !correlation in mass units
       tr=abs(t-405.4d0)/405.4d0           !405.4 is Tc
@@ -1827,8 +1827,8 @@ c  written by E.W. Lemmon
 c  NIST Phys & Chem Properties Div, Boulder, CO
 c  01-27-00 EWL, original version (adapted from TCENHC of SAK)
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       call DPDTK (icomp,t,rho,dpt)
@@ -1873,8 +1873,8 @@ c
 c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  10-20-99 EWL, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -1906,15 +1906,15 @@ c
       END
 
       FUNCTION THERMX(DE,D0,THER)
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       THERMX=DEXP(LOG(THER)+(DE-D0)*0.041758537D0)
       END
 
       FUNCTION DILT(ICOMP,T)
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       TF=T**(1.0D0/3.0D0)
       TFF=T**(-4.0D0/3.0D0)
@@ -1927,8 +1927,8 @@ c
       END
 
       FUNCTION RCRIT(D,T)
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       DELT=ABS(T-32.938D0)
       DELD=D-15.556D0- 0.008229*DELT**1.5D0
@@ -1941,8 +1941,8 @@ c
 C     INPUT, DENSITY MOL/L, TEMPERATURE K, OP PARA FRACTION
 C     OUTPUT, THERMAL CONDUCTIVITY OF HYDROGEN, W/M.K, 4 FEB 84
 C     FROM NBSIR 84-3006, HM RODER MAY 86
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       DIMENSION TNZ(35),TPZ(35),TT(35),G(3)
       parameter (TNZ=(/.0505,.0568,.0632,.0695,.0763,.0829,.0896,
      &.0962,.1026,.1092,.1157,.1220,.1282,.1342,.1401,.1458,.1514,
@@ -1976,8 +1976,8 @@ C     FROM NBSIR 84-3006, HM RODER MAY 86
       END
 
       FUNCTION CRITH2(D,T)
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       CRITH2=0.0D0
       IF(T.LE.77..OR.T.GE. 108.35658)RETURN
@@ -1989,8 +1989,8 @@ c
       FUNCTION EXCSH2(ICOMP,D,T)
 c  12-23-03 EWL, add D.LT.0.001 to stop infinite contribution at very low p.
 c  01-23-07 EWL, check for high exponent on R2
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       dimension ET(8)
 c
       EXCSH2=0
@@ -2017,8 +2017,8 @@ c
       END
 
       FUNCTION REXCES(D,T)
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       DEL=.38611D-4+.10664D-7*T
       REXCES=.15843D-2*D+DEL*(DEXP(2.1D0*D**.36D0)-1.0D0)
@@ -2046,8 +2046,8 @@ c  07-23-02 EWL, initialize tcxcr
 c  09-18-03 EWL, change dcc from 69.58 to 69.158 (as given by Hands and Arp)
 c  08-09-05 EWL, check for rho=0
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       bkt=0.0d0
@@ -2138,8 +2138,8 @@ c
 c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  02-29-00 EWL, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       double precision gt(9)
 c
       tcxety=0.0d0
@@ -2213,8 +2213,8 @@ c
 c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  11-01-00 EWL, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       tcxR23=0.0d0
       rhoL=ctcx(icomp,1,1)
@@ -2252,8 +2252,8 @@ c
 c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  11-06-00 EWL, original version
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       tcxD2O=0.0d0
       tr=t/trdbkt(icomp)
@@ -2311,8 +2311,8 @@ c  12-19-06 EWL, add check for large EXP(dr*s)
 c  01-04-08 MLH, added additional slots to WNTETA
 c  05-10-08 MLH, fix bug dreta instead of dr, allow for new vis model
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       tcxH2O=0.0d0
       tr=t/trdbkt(icomp)
@@ -2383,8 +2383,8 @@ c   tccr--the critical enhancement to the thermal conductivity W/m-K
 c
 c   09-30-2010  based on code from R. Perkins
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       dimension x(ncmax)
       parameter (Tc=647.096D0, Denc=322.0D0, Pc=22.064D0)
@@ -2480,8 +2480,8 @@ c  10-06-08  MLH, prevent ridiculous numbers for qd in tk6 model
 c  06-01-11  EWL, remove common block SHAPES which was not used
 c
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       dimension x(ncmax)
 c

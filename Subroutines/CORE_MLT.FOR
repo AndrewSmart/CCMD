@@ -35,7 +35,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  11-16-98 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       herr=' '
@@ -92,7 +92,7 @@ c  03-08-07 EWL, change p to p2 so that an intermittent value does not get retur
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: MELTT
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
       character*255 herr
 c
@@ -155,7 +155,7 @@ c  01-21-00 EWL, return if fluids does not have a melting line
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: MELTP
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -203,7 +203,7 @@ c  11-16-98 EWL, original version
 c  10-16-01 EWL, change order, call MLTPH2 instead of MELT2
 c  10-16-01 EWL, change ML3 to MLP and ML4 to MLW
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       ierr=0
@@ -281,7 +281,7 @@ c  10-22-10 EWL, update with latest equation of Wagner
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: MLTH2O
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       p1=0.0d0
       p2=0.0d0
@@ -356,7 +356,7 @@ Cc  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulde
 Cc  11-17-98 EWL, original version
 Cc  07-03-01 EWL, add patch to fix water equation above 700 K.
 Cc
-C      include 'commons.for'
+C      include 'COMMONS.FOR'
 Cc
 Ccx DEC$ ATTRIBUTES DLLEXPORT :: MLTH2O
 Cc
@@ -429,7 +429,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  11-17-98 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       tr=t/trdmlt(icomp)
       pr=0.0d0
@@ -466,7 +466,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  02-12-99 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       herr=' '
@@ -519,7 +519,7 @@ c  02-12-99 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SUBLT
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
       character*255 herr
 c
@@ -569,7 +569,7 @@ c  02-12-99 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SUBLP
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -613,7 +613,7 @@ c  written by E.W. Lemmon, NIST Physical & Chemical Properties Division, Boulder
 c  02-12-99 EWL, original version
 c  10-17-01 EWL, change SB2 to SB3 and add SB2 similar to ML2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       p=0
@@ -701,7 +701,7 @@ c  03-08-00 EWL, add check for t<ttrp
 c  10-24-00 EWL, add logic for ICE I (for water)
 c  07-20-10 EWL, change how t is modified if pp<0
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c

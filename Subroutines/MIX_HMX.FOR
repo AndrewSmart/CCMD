@@ -63,7 +63,7 @@ c  06-03-97 EWL, add third derivative of Helmholtz energy with respect to densit
 c  01-07-98  MM, move x(i)*x(j) multiplier back to PHIMIX
 c  09-00-00 EWL, switch order of execution, check x=0 before call to PHIMIX
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       phihmx=0.0d0
@@ -161,7 +161,7 @@ c  08-17-06 EWL, update program for GERG-2004 equation of Kunz and Wagner
 c  10-19-06 EWL, change calculation of ncode2 to work with "KW"
 c  04-16-10 EWL, increase nmsav from 25 to 55 to allow KWA, KWB, KWC, etc.
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       phimix=0.0d0
@@ -435,7 +435,7 @@ c  08-17-06 EWL, update program for GERG-2004 equation of Kunz and Wagner
 c  08-21-06 EWL, if TC1 or VC1 are not available, return reducing parameters instead of an error message
 c  02-13-13 EWL, return values from spline curves if available
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -566,7 +566,7 @@ c
 c  01-26-10 EWL, rename original routine with new inputs, keep this routine
 c                for old applications.
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -640,7 +640,7 @@ c  01-26-10 EWL, rename subroutine
 c  01-26-10 EWL, add derivatives with respect to composition
 c  02-13-13 EWL, change error numbers
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -919,7 +919,7 @@ c  08-17-06 EWL, update program for GERG-2004 equation of Kunz and Wagner
 c  09-06-06 EWL, change nbrule to 20
 c  01-24-13 MLH, check for alchohols in mixtures
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 htype
       character*255 hfmix
       character*255 herr,herr1
@@ -1257,8 +1257,8 @@ c  05-27-08 MLH, add one more binary int par for dilute gas viscosity xdij in tr
 c  06-11-08 MLH, add second bin int for dilute gas vis xdij2
 c  07-08-10 EWL, add check for official GERG2004 coefficients
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*1 hstar,h1
       character*3 hmodij,hmodt,hmodv
       character*3 hmodc,hmodz
@@ -1611,7 +1611,7 @@ c  07-08-02 EWL, initialize 4th term in amix to 0
 c  08-17-06 EWL, update program for GERG-2004 equation of Kunz and Wagner
 c  01-03-07 EWL, change the 2000 to 20000 in 'do iline=1,2000' to read in more lines
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*1 hstar,h1
       character*3 hmodij
       character*3 hflag,htype
@@ -1824,7 +1824,7 @@ c  09-07-06 EWL, change LJ1 to LJ6
 c  09-12-06 EWL, keep fmix(1) bounds within 500 to avoid crashes
 c  08-23-10 EWL, remove acetone from list of fluids not allowed in mixtures
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       logical lest
 c
@@ -1999,7 +1999,7 @@ c  written by M. McLinden, NIST Thermophysics Division, Boulder, Colorado
 c  11-19-96  MM, original version
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
 c     write (*,1002) i,j
@@ -2037,7 +2037,7 @@ c  written by M. McLinden, NIST Thermophysics Division, Boulder, Colorado
 c  11-19-96  MM, original version
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
 c     write (*,1002) i,j
@@ -2061,7 +2061,7 @@ c
 c  check for ammonia-water mixture, if set, use international standard settings
 c  check that the user has not modified the reference state for their own use
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 hrf
       character*255 herr
       dimension x0(ncmax)

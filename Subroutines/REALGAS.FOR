@@ -46,7 +46,7 @@ c  03-22-96  MM, replace /MODEL/ with /EOSMOD/
 c  03-05-98  MM, do not check mix model (heos) on branch
 c  07-21-03 EWL, add Peng-Robinson check
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       if (del.le.1.0d-10) then    !trivial solution at zero density
         phik=0.0d0                !for any and all derivatives
@@ -109,7 +109,7 @@ c  10-10-96  MM, if (nc = 1) call PHIK, rather than model-specific PHIxxx
 c  10-30-02 EWL, add AGA8 mixture model
 c  07-21-03 EWL, add Peng-Robinson check
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       phix=0.0d0
@@ -156,7 +156,7 @@ c  02-27-96  MM, original version, adapted from REDFEQ and PHIK
 c  03-22-96  MM, replace /MODEL/ with /EOSMOD/
 c  03-05-98  MM, do not check mix model (heos) on branch
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       if (hmxeos(icomp)(1:2).eq.'FE') then
         call REDFEQ (icomp,tred,Dred)
@@ -204,7 +204,7 @@ c                (missed in original version)
 c  03-22-96  MM, replace /MODEL/ with /EOSMOD/
 c  10-10-96  MM, if (nc = 1) call REDK, rather than model-specific routine
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       call ISPURE (x,icomp)

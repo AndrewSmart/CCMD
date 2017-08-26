@@ -44,7 +44,7 @@ c
 c  written by D.E. Cristancho, NIST Thermophysics Division, Boulder, Colorado
 c  06-18-09 DEC, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       phiqui=0.d0
       if (del.le.1.0d-10) RETURN  !trivial solution at zero density for
@@ -305,7 +305,7 @@ c
 c  written by D.E. Cristancho, NIST Thermophysics Division, Boulder, Colorado
 c  06-18-09 DEC, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       tc=tcqui(icomp)
       pc=pcqui(icomp)
@@ -331,7 +331,7 @@ c
 c  written by D.E. Cristancho, NIST Thermophysics Division, Boulder, Colorado
 c  06-18-09 DEC, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       tred=t0qui(icomp)
       Dred=rho0q(icomp)
@@ -362,7 +362,7 @@ c
 c  written by D.E. Cristancho, NIST Thermophysics Division, Boulder, Colorado
 c  06-18-09 DEC, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*12 hcasno
       character*255 herr
 c

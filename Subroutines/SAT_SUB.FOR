@@ -153,7 +153,7 @@ c  09-15-11  MK, add call to Maxwell subroutine
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SATT
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr2,herr3
       dimension x(ncmax),xliq(ncmax),xvap(ncmax),x2org(ncmax),xs(ncmax)
       dimension x2(ncmax),f1(ncmax),f2(ncmax),x2new(ncmax)
@@ -1004,7 +1004,7 @@ c  08-06-09 EWL, original version, taken from code in SATT
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SATTEST
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),x2(ncmax),pcomp(ncmax)
       character*255 herr
 c
@@ -1138,7 +1138,7 @@ c  11-29-12 EWL, in inner loop, if density from TPRHO is out range, exit after 1
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SATP
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr2,herr3
       dimension x(ncmax),xliq(ncmax),xvap(ncmax),x2org(ncmax)
       dimension x2(ncmax),f1(ncmax),f2(ncmax),x2new(ncmax)
@@ -1900,7 +1900,7 @@ c  08-06-09 EWL, remove the check on pcomp(i)<10.  The impact of this may not be
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SATPEST
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),x2(ncmax),pcomp(ncmax)
       dimension tk(4),ft(3)                  !used for T iteration
       character*255 herr
@@ -2144,7 +2144,7 @@ c  07-28-11 EWL, calculate rhov at Tc in vapor phase for mixtures to get ft(1)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SATD
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr1
       dimension x(ncmax),xliq(ncmax),xvap(ncmax)
       dimension tt(3),ft(2)
@@ -2527,7 +2527,7 @@ c  03-15-11 EWL, add check for h1>h2>h3 when determining hmax
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SATH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr1
       dimension x(ncmax),xliq(ncmax),xvap(ncmax)
       dimension tt(3),ft(2)
@@ -2838,7 +2838,7 @@ c
 c  written by Matthias Kunick, NIST Thermophysics Division, Boulder, Colorado
 c  09-15-11  MK, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
       character herr*255
       parameter (eps=1.d-4)
@@ -2992,7 +2992,7 @@ c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  06-15-11 EWL, original version, remove piece from SATH and place here
 c  11-27-12 EWL, use values from Splines if available
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr1
       dimension x(ncmax),xliq(ncmax),xvap(ncmax)
       call MAXT (x,tmaxt,tmaxp,tmaxd,ierr,herr1)
@@ -3105,7 +3105,7 @@ c  05-16-05 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SATE
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -3191,7 +3191,7 @@ c  03-31-11 EWL, add check for p>pmax along melting line
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SATS
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr1
       dimension x(ncmax),xliq(ncmax),xvap(ncmax)
       dimension tt(3),ft(2)
@@ -3554,7 +3554,7 @@ c  written by E.W. Lemmon, NIST Phys & Chem Properties Div, Boulder, CO
 c  06-15-11 EWL, original version, remove piece from SATS and place here
 c
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr1
       dimension x(ncmax),xliq(ncmax),xvap(ncmax)
       call CRITP (x,tc,pc,rhoc,ierr,herr1)
@@ -3684,7 +3684,7 @@ c  09-30-98 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: CSATK
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax),xliq(ncmax),xvap(ncmax)
 c
@@ -3739,7 +3739,7 @@ c  09-25-06 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DPTSATK
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax),xliq(ncmax),xvap(ncmax)
 c
@@ -3795,7 +3795,7 @@ c  03-30-05 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: CV2PK
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr1,herr2
       dimension x(ncmax),xliq(ncmax),xvap(ncmax)
 c
@@ -3865,7 +3865,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  11-08-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 
@@ -3902,7 +3902,7 @@ c
 c ======================================================================
 c
       subroutine DLDV (t,p,rhol,rhov,xl,xv,ierr,herr)
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension xl(ncmax),xv(ncmax)
 
@@ -4020,7 +4020,7 @@ c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  11-28-06 EWL, original version taken from code in SATT
 c  09-15-11  MK, split subroutine SPNDL into liquid and vapor routines
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       character*255 herr2
       dimension x(ncmax)
@@ -4132,7 +4132,7 @@ c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  11-28-06 EWL, original version taken from code in SATT
 c  09-15-11  MK, split subroutine SPNDL into liquid and vapor routines
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       character*255 herr2
       dimension x(ncmax)
@@ -4237,7 +4237,7 @@ c  written by Matthias Kunick, NIST Thermophysics Division, Boulder, Colorado
 c  09-15-11  MK, original version
 c
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -4317,7 +4317,7 @@ c
 c  written by Matthias Kunick, NIST Thermophysics Division, Boulder, Colorado
 c  09-15-11  MK, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
       dimension dspndl_v_save(iptmax)
@@ -4429,7 +4429,7 @@ c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  01-01-96 EWL, original version taken from code in SATT
 c
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -4464,7 +4464,7 @@ c  get next point by using the slope of the previous two points.
 c     write (*,*) ' *** Fncrpt: No convergence ***'
       end                                             !subroutine FNCRPT
       function CRTDEN (x,t,d)
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
       iter=0
  10   iter=iter+1
@@ -4507,7 +4507,7 @@ c
 c  written by Diego Ortiz, NIST Thermophysics Division, Boulder, Colorado
 c  07-01-10 DOO, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),xliq(ncmax),xvap(ncmax)
       character herr*255
 c     dimension tini,ti,Tol,told,fnold
@@ -4667,7 +4667,7 @@ c
 c  written by Diego Ortiz, NIST Thermophysics Division, Boulder, Colorado
 c  07-01-10 DOO, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),xliq(ncmax),xvap(ncmax)
       character herr*255
 c     dimension alphaini,ti,Tol,alphaold,fnold
@@ -4788,7 +4788,7 @@ c
 c  written by Diego Ortiz, NIST Thermophysics Division, Boulder, Colorado
 c  07-01-10 DOO, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),xout(ncmax),pc2(ncmax),tc2(ncmax),acf2(ncmax)
       character herr*255
 c     dimension i
@@ -4882,7 +4882,7 @@ c
 c  written by Andreas Jaeger, Johannes Gernert, Diego Ortiz, and Eric Lemmon
 c  06-20-11 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),xliq(ncmax),xvap(ncmax),ix(ncmax),ij(ncmax)
       character herr*255
       dimension dadn(ncmax),dnadn(ncmax)
@@ -5260,7 +5260,7 @@ c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  09-20-11 EWL, original version
 c  12-01-12 EWL, change to density marching method
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xPnts(1000),yPnts(1000),coefs(1000)
       dimension x(ncmax),y(ncmax),z(ncmax),slp(20)
       character herr*255
@@ -5536,7 +5536,7 @@ c  written by G. Venkatarathnam, Indian Institute of Technology Madras
 c  00-00-12  GV, original version
 c  10-29-12 EWL, adapt code for use in REFPROP
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension z(ncmax),x(ncmax),y(ncmax),philn(ncmax+3),phi(ncmax)
       do i=1,nc
         phi(i)=EXP(philn(i))
@@ -5581,7 +5581,7 @@ c  written by G. Venkatarathnam, Indian Institute of Technology Madras
 c  00-00-12  GV, original version
 c  10-29-12 EWL, adapt code for use in REFPROP
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),philn(ncmax),phi(ncmax)
       dimension dadn(ncmax),dnadn(ncmax)
       character herr*255
@@ -5664,7 +5664,7 @@ c  written by G. Venkatarathnam, Indian Institute of Technology Madras
 c  10-15-11  GV, original version
 c  01-07-13 EWL, adapt code for use in REFPROP
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension z(ncmax),y(ncmax),yn(ncmax),v(ncmax),g(ncmax),u(ncmax)
       dimension a(ncmax,ncmax),dfds(2),dpht(ncmax),dphp(ncmax)
       dimension phy(ncmax),phz(ncmax),dft2(2),dfp2(2)
@@ -5837,7 +5837,7 @@ c  written by G. Venkatarathnam, Indian Institute of Technology Madras
 c  00-00-12  GV, original version
 c  10-29-12 EWL, adapt code for use in REFPROP
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,hr
       dimension xjacob(50,50),f(50)
       dimension phx(ncmax),phy(ncmax),phz(ncmax),vrb(ncmax+3)

@@ -1,4 +1,4 @@
-c  begin file commons.for
+c  begin file COMMONS.FOR
       implicit double precision (a-h,o-z)
       implicit integer (i-k,m,n)
       implicit logical (l)
@@ -713,5 +713,5 @@ c        1         2         3         4         5         6         7
 c23456789012345678901234567890123456789012345678901234567890123456789012
 c
 c ======================================================================
-c                                                   end file commons.for
+c                                                   end file COMMONS.FOR
 c ======================================================================

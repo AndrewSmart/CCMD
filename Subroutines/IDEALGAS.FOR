@@ -45,7 +45,7 @@ c  06-17-96  MM, check only 'CP' rather than 'CPP' to allow CP1
 c  12-24-02 EWL, ditto for 'PH' rather than 'PH0'
 c  06-13-06 EWL, split into pure fluid and mixture sections
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       cp0sum=0.0d0
@@ -106,7 +106,7 @@ c  03-22-96  MM, replace /CPMOD/ with /EOSMOD/
 c  06-17-96  MM, check only 'CP' rather than 'CPP' to allow CP1
 c  06-13-06 EWL, split into pure fluid and mixture sections
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       cpisum=0.0d0
@@ -160,7 +160,7 @@ c  03-22-96  MM, replace /CPMOD/ with /EOSMOD/
 c  06-17-96  MM, check only 'CP' rather than 'CPP' to allow CP1
 c  06-13-06 EWL, split into pure fluid and mixture sections
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       cptsum=0.0d0
@@ -242,7 +242,7 @@ c  07-05-96  MM, note that PH0xxx models return tau*phi_tau, etc.
 c                (no change in this routine)
 c  12-02-98 EWL, split into pure fluid and mixture sections
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
 c     write (*,1002) itau,idel,t,rho
@@ -324,7 +324,7 @@ c  06-17-96  MM, check only 'CP' rather than 'CPP' to allow CP1
 c  10-10-96  MM, this routine never called, comment out
 c  10-15-96  MM, needed in some of the new transport routines, restore
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       if (hmodcp(icomp)(1:2).eq.'CP') then
 c  polynomial fit
@@ -383,7 +383,7 @@ c
 c  written by M. McLinden, NIST Physical & Chem Properties Div, Boulder, CO
 c  06-16-97  MM, original version; based on PHIO
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       if (hmodcp(icomp)(1:2).eq.'CP') then
 c  polynomial fit of isobaric heat capacity for the ideal gas state

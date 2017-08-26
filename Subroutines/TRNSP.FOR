@@ -82,8 +82,8 @@ c  01-24-13 MLH, don't allow transport with alcohol mixtures
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TRNPRP
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr,herrl,herrec,herrpf
       logical lecs
       dimension x(ncmax)
@@ -403,8 +403,8 @@ c                core-level routines directly
 c  01-17-97  MM, change initial-density dependence to visc virial coeff
 c  11-19-07  MLH, initialized value, removed unused commons, declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       eta=0.0d0
@@ -453,8 +453,8 @@ c  12-26-06 MLH, added vs4 model (generalized friction theory)
 c  11-02-07 MLH, added vs5 model (Chung et al.)
 c  12-10-07 MLH, added vs4 dilute call
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       ierr=0
@@ -516,8 +516,8 @@ c  03-06-02 EWL, initialize etaB2
 c  12-26-06 MLH, added vs4 model
 c  12-10-07 MLH, added possible etab2 for vs4 model
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       ierr=0
@@ -577,8 +577,8 @@ c  03-21-02 MLH, modified VS0 model to have residual piece
 c  12-26-06 MLH, added vs4 model
 c  11-02-07 MLH, added Chung model
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       ierr=0
@@ -636,8 +636,8 @@ c  written by M. McLinden, NIST Phys & Chem Properties Div, Boulder, CO
 c  02-04-97  MM, original version
 c  11-19-07  MLH, added init values, removed unused commons, declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       etab=0.0d0
@@ -682,8 +682,8 @@ c  10-30-96  MM, call intermediate TCXK0, etc routines rather than
 c                core-level routines directly
 c  11-16-07  MLH, added initial values, removed unused commons, declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       ierr=0
@@ -727,8 +727,8 @@ c  10-30-96  MM, original version
 c  03-07-00 EWL, add TC0 model
 c  11-05-07 MLH, add TC5 model, initial values
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       ierr=0
@@ -785,8 +785,8 @@ c  10-30-96  MM, original version
 c  03-07-00 EWL, add TC0 model
 c  11-05-07 MLH, add TC5 model, initial values
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
 c
       ierr=0
@@ -845,8 +845,8 @@ c  11-06-00 EWL, add water
 c  07-01-02 MLH, add TK6
 c  11-19-07 MLH, added initial values, removed unused commons, declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*255 herr
       dimension xfeed(ncmax)
 c
@@ -918,8 +918,8 @@ c  01-31-97  MM, add case of model = 'NUL'
 c  03-07-00  EWL, add CI0 model
 c  11-19-07  MLH, removed unused commons, declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*3 hmodci
 c
 c  call appropriate function for collision integral
@@ -974,8 +974,8 @@ c  08-19-97  MM, change error number for nread<=0; input hcasno is not array
 c  12-02-97  MM, skip over limits on file read
 c  08-13-98  MM, delete obsolete (unused) format statement
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -1036,8 +1036,8 @@ c  05-14-97  MM, change power of T coefficient to integer, add to /WIFOMG/
 c  01-19-00  EWL, check for tstar=0 and avoid 0**0 error message
 c  11-19-07  MLH, removed unused commons, declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       omega1=1.0d0
       tstar=1.0d-20
@@ -1081,8 +1081,8 @@ c  08-19-97  MM, change error number for nread<=0
 c  12-02-97  MM, skip over limits on file read
 c  08-13-98  MM, delete obsolete (unused) format statement
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -1143,8 +1143,8 @@ c  01-21-97  MM, add /WIFOMG/ to maintain parallel w/ OMEGA1
 c  05-14-97  MM, add icomg to /WIFOMG/ (used in OMEGA1)
 c  11-19-07  MLH, removed unused commons, declarations
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
 c
       ekt3=1.0d0
       omega2=1.0d0

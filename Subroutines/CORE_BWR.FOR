@@ -70,7 +70,7 @@ c  11-29-95  MM, variable lower limit on coefficient/constant arrays
 c                to accommodate ECS reference fluid
 c  02-27-96  MM, parameter n0=-ncmax to accommodate ECS-thermo model
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension an(15)
 c
       j=icomp              !pointer to appropriate fluid
@@ -148,7 +148,7 @@ c  11-29-95  MM, variable lower limit on coefficient/constant arrays
 c                to accommodate ECS reference fluid
 c  02-27-96  MM, parameter n0=-ncmax to accommodate ECS-thermo model
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension an(15)
 c
       j=icomp              !pointer to appropriate fluid
@@ -236,7 +236,7 @@ c  11-29-95  MM, variable lower limit on coefficient/constant arrays
 c                to accommodate ECS reference fluid
 c  02-27-96  MM, parameter n0=-ncmax to accommodate ECS-thermo model
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension dandt(15)
 c
       j=icomp              !pointer to appropriate fluid
@@ -326,7 +326,7 @@ c  11-29-95  MM, variable lower limit on coefficient/constant arrays
 c                to accommodate ECS reference fluid
 c  02-27-96  MM, parameter n0=-ncmax to accommodate ECS-thermo model
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension d2andt(15)
 c
       j=icomp              !pointer to appropriate fluid
@@ -416,7 +416,7 @@ c                to accommodate ECS reference fluid
 c  02-27-96  MM, parameter n0=-ncmax to accommodate ECS-thermo model
 c  06-06-97 EWL, check if rho < 1.0d-10, avoid divide by zero
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension an(15)
 c
       DPDBWR=R*t           !ideal-gas
@@ -494,7 +494,7 @@ c  written by E.W. Lemmon, NIST Physical & Chem Properties Div, Boulder, CO
 c  06-04-97 EWL, original version
 c  04-09-98 EWL, split expression for expsum (Lahey compiler choked on it)
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension an(15)
 c
       D2PBWR=0.0d0
@@ -580,7 +580,7 @@ c  11-29-95  MM, variable lower limit on coefficient/constant arrays
 c                to accommodate ECS reference fluid
 c  02-27-96  MM, parameter n0=-ncmax to accommodate ECS-thermo model
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension dandt(15)
 c
       j=icomp              !pointer to appropriate fluid
@@ -681,7 +681,7 @@ c  02-27-96  MM, parameter n0=-ncmax to accommodate ECS-thermo model
 c  06-04-97 EWL, added third derivative with respect to density
 c  09-00-00 EWL, remove del**idel*tau**itau in calculation of phibwr
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       phibwr=0.0d0
       if (del.le.1.0d-10) then    !trivial solution at zero density
@@ -743,7 +743,7 @@ c  11-29-95  MM, variable lower limit on coefficient/constant arrays
 c                to accommodate ECS reference fluid
 c  02-27-96  MM, parameter n0=-ncmax to accommodate ECS-thermo model
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       tc=tcbwr(icomp)
       pc=pcbwr(icomp)*100.0d0    ! convert bar -> kPa
@@ -789,7 +789,7 @@ c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  12-22-98 EWL, set Reos to Rbwr
 c  02-15-00 EWL, change read statement to aid UNIX machines
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 hcpbwr
       character*12 hcasno,hcasb
       character*255 herr
@@ -938,7 +938,7 @@ c      block data BDBWR
 cc
 cc  data for MBWR equations of state
 cc
-c      include 'commons.for'
+c      include 'COMMONS.FOR'
 c      parameter (mxbwr=2)
 c      character*3 hcpbwr
 c      character*12 hcasb

@@ -57,7 +57,7 @@ c  01-26-00 EWL, add check for del>=0 and tau>=0
 c  09-05-00 EWL, return 0 for invalid idel or itau
 c  01-17-01 EWL, change tau0.ge.0 to tau0.gt.0 and avoid 0**0
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       phiecs=0.0d0    !initialize outputs and intermediate results
       phi01=0.0d0
@@ -229,7 +229,7 @@ c  02-06-96  MM, original version
 c  03-19-96  MM, add dipole moment to /CCON/
 c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       tc=tcrit(icomp)
       pc=pcrit(icomp)
@@ -275,7 +275,7 @@ c  06-22-99 EWL, reset ptp and dtp to zero
 c  06-22-99 EWL, change Reos to 8.314472, set R to Reos
 c  05-03-04 EWL, change dtp to rhomax
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 heqn
       character*12 hcasno
       character*255 hreff
@@ -389,7 +389,7 @@ c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  01-17-01 EWL, initialize values and return if t<=0
 c  11-15-07 MLH, remove dead code
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       f=0.d0
       dfdt=0.d0
@@ -475,7 +475,7 @@ c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  01-17-01 EWL, initialize values and return if t<=0
 c  11-15-07 MLH, remove dead code
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       h=0.d0
       dhdt=0.d0

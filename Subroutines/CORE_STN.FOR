@@ -52,7 +52,7 @@ c                [should now call SURTEN; this retained for compatibility]
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SURFT
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr2
       dimension xl(ncmax),xliq(ncmax),xvap(ncmax)
 c
@@ -147,7 +147,7 @@ c  06-02-99  MM, original version; based on and replaces SURFT
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SURTEN
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr1,herr2
       dimension xl(ncmax),xv(ncmax),xliq(ncmax)
 c
@@ -244,7 +244,7 @@ c  08-16-96  MM, add actual ST1 model
 c  08-19-97  MM, get rid of herr=herr (avoid warning); flag nread<=0
 c  12-02-97  MM, skip over pressure and density limit and Tc on file read
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*12 hcasno
       character*255 herr
 c
@@ -307,7 +307,7 @@ c  12-01-98 EWL, add Reos and triple point pressure and density to /CCON/
 c  06-02-99  MM, add vapor density and composition to argument list to
 c                accommodate new mixture model of Holcomb & Higashi
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr2
       dimension xl(ncmax),zeta(ncmax),f(ncmax),cx(ncmax),xcritf(ncmax),
      &          xv(ncmax),zmole(ncmax)
@@ -462,7 +462,7 @@ c
 c  written by M. McLinden, NIST Physical & Chemical Properties Division, Boulder, Colorado
 c  04-17-97  MM, original version (based on STN)
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
 c
       ierr=0
@@ -508,7 +508,7 @@ c  written by M. McLinden, NIST Physical and Chemical Properties Division, Bould
 c  04-21-97  MM, original version
 c  12-15-97  MM, change value of ierr for non-convergence
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr1
       dimension zeta(ncmax),zetaj(ncmax),x(ncmax),f(ncmax),xnew(ncmax)
 c

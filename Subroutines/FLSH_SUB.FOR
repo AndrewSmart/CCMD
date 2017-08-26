@@ -122,7 +122,7 @@ c  10-09-12 EWL, remove check on rho<1 after call to PR, and very small rho for 
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TPRHO
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr1
       dimension x(ncmax)
 c
@@ -619,7 +619,7 @@ c  08-04-11 EWL, set dlbub, dldew, dvbub, and dvdew to rhoc if SATT fails
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TPFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr1,herr2,herrl
       dimension z(ncmax),x(ncmax),y(ncmax)
       dimension xdew(ncmax),ydew(ncmax),ybub(ncmax),xbub(ncmax)
@@ -1039,7 +1039,7 @@ c  12-04-12 EWL, add xinc and xdir to flip values of x(1) back and forth instead
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TPFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr2
       dimension z(ncmax),x(ncmax),y(ncmax),xs(ncmax),ys(ncmax)
       dimension xbub(ncmax),xdew(ncmax)
@@ -1361,7 +1361,7 @@ c  12-16-02 EWL, add checks for pseudo-pure fluid, calculate p using q
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TDFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr1,herr2,herrl
       dimension x(ncmax),y(ncmax),z(ncmax)
       dimension xbub(ncmax),xdew(ncmax),ybub(ncmax),ydew(ncmax)
@@ -1581,7 +1581,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: TDFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax),xdew(ncmax),ybub(ncmax)
 c
@@ -1651,7 +1651,7 @@ c  11-21-12 EWL, return q=-998 when p>pc and t<tc
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PDFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,herr2,herrl
       dimension z(ncmax),x(ncmax),y(ncmax)
       dimension xdew(ncmax),ydew(ncmax),ybub(ncmax),xbub(ncmax)
@@ -1915,7 +1915,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PDFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -1963,7 +1963,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PDFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax),xdew(ncmax),ybub(ncmax)
 c
@@ -2037,7 +2037,7 @@ c  01-18-01 EWL, remove code and call generic PBFLSH
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PHFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax),y(ncmax),z(ncmax)
 c
@@ -2070,7 +2070,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PHFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -2118,7 +2118,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PHFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax),xdew(ncmax),ybub(ncmax)
 c
@@ -2190,7 +2190,7 @@ c  01-18-01 EWL, remove code and call generic PBFLSH
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PSFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax),y(ncmax),z(ncmax)
 c
@@ -2223,7 +2223,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PSFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -2271,7 +2271,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PSFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax),xdew(ncmax),ybub(ncmax)
 c
@@ -2324,7 +2324,7 @@ c  01-18-01 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PEFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax),y(ncmax),z(ncmax)
 c
@@ -2357,7 +2357,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PEFL1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -2405,7 +2405,7 @@ c     herr--error string (character*255 variable if ierr<>0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PEFL2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension z(ncmax),x(ncmax),y(ncmax),xdew(ncmax),ybub(ncmax)
 c
@@ -2488,7 +2488,7 @@ c  11-26-12 EWL, if point is vapor phase, skip calculation of bubble point
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PBFLSH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*1 bt
       character*2 ab
       character*255 herr,herr1,herr2

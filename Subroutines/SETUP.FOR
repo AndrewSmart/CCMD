@@ -274,8 +274,8 @@ c    treated as a comment by all other compilers.
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SETUP
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*3 hrf,hcomp(1:ncmax)
       character*255 hfiles(ncmax),hfile(n0:nx),hfmix,hfmix2,rflnam
       character*255 herr,herr1,ucase
@@ -762,7 +762,7 @@ c  01-16-06 EWL, check for missing '|' at end of line
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SETUP0
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character hfld*10000,hfm*255,hrf*3,herr*255,hfmix*255
       character*255 hf(ncmax)
 c
@@ -889,8 +889,8 @@ c  12-12-07 MLH, allow FEX for generalized model of Xiang and Deiters
 c  01-09-08 EWL, read in heat of combustion
 c  02-26-09 EWL, check for missing '.fld' on file names
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*1 h1,hstar
       character*3 hsveq
       character*3 hetemp,httemp
@@ -1421,8 +1421,8 @@ c  05-17-11 EWL, change nc to ncomp
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SETMOD
 c
-      include 'commons.for'
-      include 'comtrn.for'
+      include 'COMMONS.FOR'
+      include 'COMTRN.FOR'
       character*3 htype,hmix,hcomp(1:ncmax)
       character*255 herr
 c
@@ -1562,7 +1562,7 @@ c  01-24-07 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: GERG04
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       character*3 htype,hmix,hcomp(1:ncmax)
 c
@@ -1666,7 +1666,7 @@ c  12-06-12 EWL, remove calls to PUREFLD
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SETREF
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 hrf
       character*3 hrefi(n0:nx),hrdef
       character*255 herr,herr2,herrsv
@@ -2196,7 +2196,7 @@ c  03-27-06 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SETMIX
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*3 hrf
       character*255 hmxnme,hfmix,hfiles(ncmax),herr,herr2,MixName
       dimension x(ncmax)
@@ -2278,7 +2278,7 @@ c  12-18-95  MM, use htemp to concatenate character strings (cannot
 c                concatenate string with itself on some compilers)
 c  02-22-07 EWL, check for null character in input string
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 hfilei,hflref,htemp
 c
       if (hfilei(1:5).eq.'BDATA' .or. hfilei(1:5).eq.'bdata') then
@@ -2340,7 +2340,7 @@ c  08-10-06 EWL, original version (with code taken from old SETFLD)
 c  11-10-06 EWL, add additional checks on the input file name
 c  01-04-07 EWL, add even more checks
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*26 lower,upper
       character*255 herr,hfl,hfilei,hfilej
       character*1 bs
@@ -2534,7 +2534,7 @@ c  03-07-07 EWL, check for null character
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SETPATH
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character hpth*(*)
 c
       hpath=hpth
@@ -2565,7 +2565,7 @@ c                so that the ppf is located at nc+1 (see subroutine SETNC)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PUREFLD
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       call RESETA
       icnc=0
@@ -2596,7 +2596,7 @@ c  02-04-10 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: SETNC
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       nc=ncomp
       RETURN
@@ -2613,7 +2613,7 @@ c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  01-07-10 EWL, original version
 c  02-04-10 EWL, change the ianc variable into an array
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
 c  Do not include variables such as ianc here which should not be reset
 c  in general.  They belong in the call to SETUP.
@@ -2699,7 +2699,7 @@ c  12-01-98 EWL, add default for iprnterr
 c  07-10-06 EWL, move any variables set to 'NUL' to beginning of SETUP
 c                to comply with ANSI standards
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       data nc,icnc /2*0/
       data lreset /.true./ !reset all models on 1st call to SETUP/SETMOD
       data lrst /.false./

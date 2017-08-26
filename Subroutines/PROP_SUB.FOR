@@ -108,7 +108,7 @@ c  09-15-11 EWL, remove checks for FEQ, BWR, etc., and just return values from c
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: CRITP
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -149,7 +149,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chem Properties Div, Boulder, CO
 c  12-01-12 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -204,7 +204,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chem Properties Div, Boulder, CO
 c  12-01-12 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr
       dimension x(ncmax)
 c
@@ -307,7 +307,7 @@ c                for ideal gas situations
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: THERM
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       call RMIX (x)
@@ -510,7 +510,7 @@ c  01-03-11 EWL, fixed d2P/dT2 calculation (divided by T)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: THERM2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       call ISPURE (x,icomp)
@@ -745,7 +745,7 @@ c  11-26-02 EWL, original version; based on THERM
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: THERM0
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       p0=0.d0
@@ -823,7 +823,7 @@ c  07-07-10 EWL, original version; based on THERM2
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: RESIDUAL
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       pr=0.d0
@@ -912,7 +912,7 @@ c  12-02-98 EWL, remove compositional dependence for pure fluids
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: ENTRO
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       s=0.d0
@@ -999,7 +999,7 @@ c  04-05-00 EWL, check for rho=0 and avoid division by zero
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: ENTHAL
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       h=0.d0
@@ -1071,7 +1071,7 @@ c  12-13-00 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: ENERGY
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       e=0.d0
@@ -1148,7 +1148,7 @@ c  10-01-97  MM, add compiler switch to allow access by DLL
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: CVCP
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       cv=0.d0
@@ -1221,7 +1221,7 @@ c  03-06-98  MM, check hmxeos, not heos, for 'BWR' (crash for icomp = 0)
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: CVCPK
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       cv=0.d0
       cp=0.d0
@@ -1297,7 +1297,7 @@ c  10-01-97  MM, add compiler switch to allow access by DLL
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: GIBBS
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       Ar=0.d0
@@ -1359,7 +1359,7 @@ c  12-02-98 EWL, reorganize code so to eliminate x(i) in pure fluid calculation
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: AG
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       a=0.d0
@@ -1448,7 +1448,7 @@ c  10-01-97  MM, add compiler switch to allow access by DLL
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: PRESS
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       p=0.d0
@@ -1508,7 +1508,7 @@ c  10-01-97  MM, add compiler switch to allow access by DLL
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DPDD
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       dpdrho=0.d0
@@ -1567,7 +1567,7 @@ c  10-01-97  MM, add compiler switch to allow access by DLL
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DPDDK
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       dpdrho=0.d0
       if (t.le.0.d0) return
@@ -1609,7 +1609,7 @@ c  09-05-02 EWL, add ideal gas d2PdD2
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DPDD2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       d2PdD2=0.d0
@@ -1671,7 +1671,7 @@ c  10-01-97  MM, add compiler switch to allow access by DLL
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DPDT
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       dpt=0.d0
@@ -1727,7 +1727,7 @@ c  07-07-98 EWL, original version, based on DPDT
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DPDTK
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
 c
       dpt=0.d0
       if (t.le.0.d0) return
@@ -1767,7 +1767,7 @@ c  10-01-97  MM, add compiler switch to allow access by DLL
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DDDP
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       drhodp=0.d0
@@ -1823,7 +1823,7 @@ c  10-01-97  MM, add compiler switch to allow access by DLL
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DDDT
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       drhodt=0.d0
@@ -1889,7 +1889,7 @@ c  08-21-12 EWL, original version; based on THERM2
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DERVPVT
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       if (t.le.0.d0) return
@@ -1975,7 +1975,7 @@ c                derivates of h with respect to t, p, or rho
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DHD1
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       dhdt_d=0.d0
@@ -2064,7 +2064,7 @@ c  02-22-10 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: FGCTY2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),f(ncmax)
       dimension dadn(ncmax),dnadn(ncmax)
       character*255 herr
@@ -2146,7 +2146,7 @@ c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  02-22-10 EWL, original version
 c  12-09-12 EWL, fix equations for dlnfinidT and dlnfinidV
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
       character*255 herr
       dimension dadn(ncmax),dnadn(ncmax),
@@ -2492,7 +2492,7 @@ c  11-20-09 BFT, change deln to delmol in check for x(i).gt.1.0d0-delmol
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: FGCTY
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),f(ncmax)
       dimension xplus(ncmax),xminus(ncmax)
 c
@@ -2608,7 +2608,7 @@ c  03-18-10 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: CHEMPOT
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),u(ncmax)
       dimension dadn(ncmax),dnadn(ncmax)
       character*255 herr
@@ -2659,7 +2659,7 @@ c  03-21-10 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: FUGCOF
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),phi(ncmax),f(ncmax)
       character*255 herr
 c
@@ -2708,7 +2708,7 @@ c  03-21-10 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: ACTVY
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),actv(ncmax),gamma(ncmax),f(ncmax),fp(ncmax)
       dimension xl(ncmax),xv(ncmax)
       character*255 herr
@@ -2764,7 +2764,7 @@ c  08-30-04 EWL, change rho to 0.00000001
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: VIRB
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       b=0.d0
@@ -2817,7 +2817,7 @@ c  08-30-04 EWL, change rho to 0.00000001
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DBDT
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       dbt=0.d0
@@ -2870,7 +2870,7 @@ c  10-29-07 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DBDT2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       dbt2=0.d0
@@ -2926,7 +2926,7 @@ c  05-07-09 EWL, change rho to 0.0001 for the BWR
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: VIRC
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       c=0.d0
@@ -2980,7 +2980,7 @@ c  10-29-07 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DCDT
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       dct=0.d0
@@ -3030,7 +3030,7 @@ c  10-29-07 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: DCDT2
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       dct2=0.d0
@@ -3081,7 +3081,7 @@ c  written by E.W. Lemmon, NIST Physical & Chem Properties Div, Boulder, CO
 c  11-26-01 EWL, original version
 c  12-08-11 EWL, change rho to 1.d-4, was too small for d=1 Gaussian terms
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       d=0.d0
@@ -3137,7 +3137,7 @@ c  10-29-07 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: VIRBA
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       ba=0.d0
@@ -3172,7 +3172,7 @@ c  10-29-07 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: VIRCA
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       ca=0.d0
@@ -3213,7 +3213,7 @@ c
 c  written by E.W. Lemmon, NIST Physical & Chem Properties Div, Boulder, CO
 c  04-19-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),xb(ncmax)
 c
       if (nc.ne.2 .or. x(1).le.0.d0 .or. x(itwo2).le.0.d0) then   !Only calculate b12 for a binary
@@ -3269,7 +3269,7 @@ c  03-21-10 EWL, add log(x(i)) to sE, gE, and aE
 c  08-24-11 EWL, replace use of 'ic2=ic' with z(i)=1 so that the fitter can parallelize the code
 c  11-23-11 EWL, remove the checks for inputs in different phases
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),xliq(ncmax),xvap(ncmax),z(ncmax)
       character*255 herr
 c
@@ -3369,7 +3369,7 @@ c  11-07-02 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: FPV
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
       character*255 herr
 c
@@ -3401,7 +3401,7 @@ Cc
 Cc  written by E.W. Lemmon, NIST Physical & Chem Properties Div, Boulder, CO
 Cc  11-07-02 EWL, original version
 Cc
-C      include 'commons.for'
+C      include 'COMMONS.FOR'
 Cc
 C      rhoair=1.d0      !Need to add formulation for air here
 C      if (rhoair.gt.0.d0) then
@@ -3423,7 +3423,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  01-19-01 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       call ISPURE (x,icomp)
@@ -3454,7 +3454,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  03-21-10 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       call RMIX (x)
@@ -3491,7 +3491,7 @@ c  06-16-06 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: THERM3
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       call THERM2 (t,rho,x,p,e,h,s,cv,cp,w,Z,hjt,A,G,xkappa,beta,
@@ -3543,7 +3543,7 @@ c  written by E.W. Lemmon, NIST Physical & Chem Properties Div, Boulder, CO
 c  01-01-10 EWL, original version
 c  10-08-11 EWL, include Gaussian terms and change input parameters
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax),phisvv(n0:nx,mxtrm)
 c
       b=0.d0
@@ -3655,7 +3655,7 @@ c  01-09-08 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: HEAT
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       character*255 herr,hcf
       dimension x(ncmax),v(6)
 c
@@ -3798,7 +3798,7 @@ c  written by E.W. Lemmon, NIST Physical & Chem Properties Div, Boulder, CO
 c  01-09-08 EWL, original version
 c  04-30-12 EWL, check for T>Tc(water)
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension xkhc(10),cpchc(10)
 c
       h=0
@@ -3944,7 +3944,7 @@ c
 c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  05-01-08 EWL, original version
 c
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       icomp=0
@@ -3982,7 +3982,7 @@ c  written by E.W. Lemmon, NIST Thermophysics Division, Boulder, Colorado
 c  08-01-11 EWL, original version
 c
 cx DEC$ ATTRIBUTES DLLEXPORT :: RIEM
-      include 'commons.for'
+      include 'COMMONS.FOR'
       dimension x(ncmax)
 c
       riemc=0.d0
